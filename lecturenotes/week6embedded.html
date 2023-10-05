@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Embedded CSS</title>
+    <style> 
+        h1 {color:blue}
+        /* body selects everything */
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: darkgray;
+        }
+        p, h1, a {/* grouped selecter */
+            font-size: 2em;
+            font-weight:bold;
+            background-color:blueviolet;
+        }
+        p a {text-decoration: none;}
+        #secondpara {color:azure}
+        .yellow {color:yellow;}
+        /* in em 2 is twice the default size */
+    </style>
+</head>
+<body>
+    <h1 class="yellow">CSS</h1>
+    <a class="yellow" href="https://www.amazon.com">Amazon</a>
+    <p><a href="https://www.ebay.com">Ebay</a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione suscipit deserunt perspiciatis ab dicta reprehenderit nesciunt necessitatibus porro aperiam placeat animi incidunt, eum, totam quibusdam pariatur modi. Animi, quas sit.</p>
+    <!-- each value for id must be unique-->
+    <p id="secondpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione suscipit deserunt perspiciatis ab dicta reprehenderit nesciunt necessitatibus porro aperiam placeat animi incidunt, eum, totam quibusdam pariatur modi. Animi, quas sit.</p>
+</body>
+</html>
