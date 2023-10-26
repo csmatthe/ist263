@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 9 Centering</title>
+    <style>
+        .first {text-align:center}
+        .second {
+            background-color: #ea8e16; 
+            width: 50%;
+            margin: 0 auto; /* zero is top and bottom, auto is left and right */
+         }
+         .third {
+            display: flex;
+            justify-content: center;
+         }
+    </style>
+</head>
+<body>
+    <h1>Centering</h1>
+    <h2>test-align</h2>
+    <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim saepe consequatur, vel iusto numquam ab rerum nemo quisquam iure dolor porro, libero nihil explicabo eligendi, aliquam quod doloribus illum pariatur.</p>
+
+    <h2>block stuff centering</h2>
+    <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias delectus laudantium, vitae quae aliquid repudiandae nihil quod voluptatum corrupti dignissimos quas enim animi neque nulla? Asperiores voluptates voluptatibus placeat consequatur?</p>
+
+    <h2>flex box hack</h2>
+    <p> this hack only works with content smaller than width</p>
+    <p class="third">Lorem ipsum dolor sitasi am temporibus labore soluta maiores.</p>
+
+</body>
+</html>
