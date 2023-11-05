@@ -13,7 +13,6 @@ h1 {font-size: 3em; text-align: center;}
 .intro {font-size: 1em; font-weight: 100; margin-left: 20px ;}
 .skillname {font-size: 20px;}
 .skills {display: flex;flex: 3;}
-
 .others {background-color: #0961ae; padding: 20px; border: 2px solid #333333; margin: 30px; border-radius: 20px;}
 .flexbox2 {display: flex; margin-top: 30px;}
 .skills{justify-content: space-around;}
