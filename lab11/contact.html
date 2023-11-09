@@ -12,6 +12,7 @@
             position: absolute; /* positions an elecment relative to the top left corner of the viewport */
             left: -999px; /* push off the left side (our button) */}
             .skip:focus {left: 10px; }
+            .con {color:#000000}
     
         </style>
         <title> Contact </title>
@@ -27,8 +28,8 @@
                 <h3>Christian Silvio Matthews <br> 900 S Crouse Ave, Syracuse, NY 13244</h3>
                 </div>
                 <div>
-                <a href="mailto:csmatthe@syr.edu" target="_blank">Christian Matthew's Email</a><br>
-                <a href="https://www.linkedin.com/in/christian-matthews-00019424b/" target="_blank">My LinkedIn Profile</a> <br>
+                <a href="mailto:csmatthe@syr.edu" target="_blank" class="con">Christian Matthew's Email</a><br>
+                <a href="https://www.linkedin.com/in/christian-matthews-00019424b/" target="_blank" class="con">My LinkedIn Profile</a> <br>
                 <a href="https://www.linkedin.com/in/christian-matthews-00019424b/" target="_blank"><img iframe src="../images/LI-Logosized.png" alt="This is an image of the Linkedin logo, clicking on this will take you to the page"></a><br>
                 </div>
             </div>
@@ -53,7 +54,7 @@
                             <br>
                         <textarea id="personal" name="personal" rows="3" cols="50"></textarea>
                             <br>
-                        <input type="submit" value="send form">
+                        <input type="submit" value="send form" id="main">
                     </form>  
             </div>
         </section>
