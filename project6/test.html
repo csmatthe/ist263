@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules</title>
+    <style>
+        body {
+            background-color: #a9a9a9;
+        }
+
+        header,
+        footer {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .pagelinks a {
+            text-decoration: none;
+            color: white;
+            margin-right: 10px;
+        }
+
+        .navlogo a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content-container {
+            width: 70%;
+        }
+
+        .content-container .scoringflex {
+            display: flex;
+            justify-content: space-between; /* Ensures images are spaced out */
+            align-items: center;
+        }
+
+        .scoreref {
+            width: 230%; /* Set width to 100% to make both images equal size */
+            
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .scoreimg {
+            width: 100%; /* Set width to 100% to make both images equal size */
+            max-width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="pagelinks">
+                <a href="page1.html"> Football <span>|</span></a>
+                <a href="page2.html"> Rules <span>|</span></a>
+                <a href="page3.html"> How to Watch/News</a>
+            </div>
+            <div class="navlogo">
+                <div>
+                    <a>LOGO</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="content-container">
+                <h2>Scoring</h2>
+                <div class="scoringflex">
+                    <figure>
+                        <img class="scoreimg" src="../projectimages/scoreboard2.jpeg" alt="scoreboard">
+                    </figure>
+                    <figure>
+                        <img class="scoreref" src="../projectimages/touchdown ref.webp"
+                            alt="ref holding up his hands to signal a touchdown">
+                    </figure>
+                </div>
+                <p>In the NFL there are 4 ways to score points, these are a touchdown, safety (different from the defensive
+                    position), extra point, and 2-point conversion. A touchdown is the most common and desired way to
+                    score...</p>
+            </div>
+            <!-- Other content containers go here -->
+        </div>
+    </main>
+    <footer>
+        <nav class="nav">
+            <div> </div>
+            <div>Football</div>
+            <div>Rules</div>
+            <div>How to Watch/News</div>
+        </nav>
+    </footer>
+</body>
+
+</html>
