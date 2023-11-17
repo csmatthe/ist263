@@ -43,28 +43,41 @@
         }
 
         .content-container {
-            width: 70%;
+            width: 80%;
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 10px;
         }
 
-        .content-container .scoringflex {
+        .content-container h2,
+        .content-container p {
+            margin-bottom: 20px;
+        }
+
+        .content-container .scoringflex,
+        .content-container .scoringflex2 {
             display: flex;
-            justify-content: space-between; /* Ensures images are spaced out */
+            justify-content: space-between;
             align-items: center;
         }
 
-        .scoreref {
-            width: 230%; /* Set width to 100% to make both images equal size */
-            
-            box-sizing: border-box;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
+        .scoreref,
         .scoreimg {
-            width: 100%; /* Set width to 100% to make both images equal size */
-            max-width: 100%;
+            border: 2px solid #333;
             box-sizing: border-box;
             padding: 10px;
             margin-bottom: 20px;
+            width: 50%;
+            max-width: 100%;
+            float: left;
+        }
+
+        .text-container {
+            width: 45%;
+        }
+
+        .scoringflex figure {
+            margin-right: 20px;
         }
     </style>
 </head>
@@ -84,34 +97,6 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="main-container">
-            <div class="content-container">
-                <h2>Scoring</h2>
-                <div class="scoringflex">
-                    <figure>
-                        <img class="scoreimg" src="../projectimages/scoreboard2.jpeg" alt="scoreboard">
-                    </figure>
-                    <figure>
-                        <img class="scoreref" src="../projectimages/touchdown ref.webp"
-                            alt="ref holding up his hands to signal a touchdown">
-                    </figure>
-                </div>
-                <p>In the NFL there are 4 ways to score points, these are a touchdown, safety (different from the defensive
-                    position), extra point, and 2-point conversion. A touchdown is the most common and desired way to
-                    score...</p>
-            </div>
-            <!-- Other content containers go here -->
-        </div>
-    </main>
-    <footer>
-        <nav class="nav">
-            <div> </div>
-            <div>Football</div>
-            <div>Rules</div>
-            <div>How to Watch/News</div>
-        </nav>
-    </footer>
 </body>
 
 </html>
