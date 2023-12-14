@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rules</title>
+    <title>How to Watch</title>
     <style>
         body {
             background-color: #a9a9a9;
             color: #333;
+            font-family: Arial, sans-serif;
         }
 
         header,
@@ -30,11 +31,64 @@
             margin-right: 10px;
         }
 
-        .navlogo a {
+        .navlogo div img {
             text-decoration: none;
             color: white;
-            font-weight: bold;
             font-size: 1.2em;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main > div {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        main h1 {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        main  div  div {
+            width: 45%;
+        }
+
+        main  div  div h1 {
+            margin-bottom: 10px;
+        }
+
+        main div div aside,
+        main div div figure {
+            margin-bottom: 20px;
+        }
+
+        main div div figure img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #333;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        main div div iframe {
+            width: 450px;
+            height: 350px;
+        }
+
+        main div div ol {
+            padding-left: 20px;
+        }
+
+        footer .footernav {
+            display: flex;
+            justify-content: space-between;
         }
 
         .content-container {
@@ -48,102 +102,25 @@
             margin-bottom: 20px;
         }
 
-        .content-container h2 {
-            margin-bottom: 20px;
-        }
-
-        .content-container p {
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .content-container iframe {
-            width: 100%;
-            height: 100%;
-        }
-
-        .content-container ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .content-container ul li {
-            margin-bottom: 10px;
-        }
-
-        .content-container figure {
-            float: right;
-            text-align: center;
-            /* Center images within the figure */
-        }
-
-        .content-container figure img {
-            height: auto;
-            border: 2px solid #333;
-            box-sizing: border-box;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-
-        .content-container aside {
-            width: 45%;
-        }
-
-        footer .footernav {
+        .content-container-big {
             display: flex;
             justify-content: space-between;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .pageTitle,
-        .infoContainer {
-            display: flex;
-            justify-content: center;
             align-items: center;
             background-color: #fff;
             padding: 20px;
             border: 2px solid #333;
             border-radius: 10px;
             margin-bottom: 20px;
-            max-width: 70%;
-            box-sizing: border-box;
+            
         }
 
-        .pageTitle h1,
-        .infoContainer ul {
-            margin: 0;
+        .sbt {
+            float: right;
         }
 
-        .infoContainer ul {
-            padding-left: 20px;
+        .logopng {
+            width: 20px;
         }
-
-        @media only screen and (max-width: 600px) {
-            .container {
-                flex-direction: column;
-                margin: 10px;
-            }
-
-            .pageTitle,
-            .infoContainer,
-            .content-container {
-                width: 100%;
-            }
-        }
-        .scoringflex img {width: 400px;}
-
-        img {width:400px}
-
-        .iframe {width:400px}
-
-        .downinfo {margin-left:70px}
-
-        .logopng {width:20px}
     </style>
 </head>
 
@@ -164,98 +141,189 @@
     </header>
 
     <main>
-        <div class="scoringflex">
-            <div class="content-container">
-                <h2>Scoring</h2>
-                <figure>
-                    <img class="scoreref" src="../projectimages/touchdown ref.webp"
-                        alt="ref holding up his hands to signal a touchdown">
-                </figure>
-                <aside>
-                    <p>In the NFL, there are 4 ways to score points: touchdown, safety, extra point, and 2-point conversion.
-                        A touchdown is worth 6 points. It occurs when the offense gets the football in the endzone.
-                        The defense can also score a touchdown by taking away the football and running it into the
-                        other endzone. After a touchdown, the scoring team can choose a 2-point conversion or an extra
-                        point. An extra point is a 33-yard kick through the goal posts, worth 1 point. A 2-point
-                        conversion is an attempt to get the ball in the endzone again, worth 2 points. If these options
-                        fail, the scoring team gets only the touchdown points. A field goal, worth 3 points, happens when
-                        a team is close to scoring but runs out of plays. A safety, worth 2 points, occurs when the
-                        offense is tackled in their own endzone.</p>
-                </aside>
-            </div>
-        </div>
-
-        <div class="content-container">
-            <div>
-                <h2>Downs</h2>
-                <figure>
-                    <img src="../projectimages/down.jpeg"
-                        alt="ref holding up 3 fingers to signal it's third down">
-                </figure>
-            </div>
-            <div>
-                <aside>
-                    <p class="downinfo">Understanding downs is crucial. The offense has 4 downs to move the ball 10 yards. Achieving this
-                        is a first-down. Typically, teams use 3 downs, reserving the 4th for a field goal or punt. A first
-                        down restarts where the previous play ended. For example, "2nd and 6" means it's the second down,
-                        and the team needs 6 yards. The defense aims to prevent the offense from converting a 1st down.</p>
-                </aside>
-            </div>
-        </div>
-
         <div>
-            <div class="content-container">
-                <h2>Different Plays</h2>
-                <aside>
-                    <p>The offense can run countless plays, mainly involving running or passing. Predicting plays before
-                        the snap is challenging. When the QB holds the ball, it's likely a pass play; if given to the
-                        running back, it's a run play. Defense options include zone coverage, blitz, or man-coverage.
-                        Zone covers specific areas, blitz commits to the run, and man-coverage assigns defenders
-                        one-on-one. It's a high-stakes game, with various outcomes like drop passes, sacks, or
-                        interceptions.</p>
+            <div>
+                <h1>How to watch the NFL</h1>
+                <aside class="content-container">
+                    <p>With all your new NFL knowledge you should have a basic grasp on the NFL. Now what do you look for on TV?
+                        Don’t worry this is the easy part now. The score of each team will be displayed on the bottom of the screen
+                        and how the logo and color for each score so it isn’t confusing. Along this graphic you will also see two
+                        different clocks. One of these clocks with say either 1st, 2nd, 3rd, or 4th next to a timer that is 15 minutes
+                        or less. This is the game clock and shows how far into the game they are. For example, if it says” 2nd 7:34”
+                        you know it’s the second quarter and there is 7 minutes 34 seconds left. The other clock will always be running
+                        down from 25 seconds, this is the play clock. To keep the game going as a decent pace of play the offense needs
+                        to start the next play before the 25 second play clock runs out, or they will get hit with a “delay of game”
+                        penalty and lose 5 yards. Now let’s talk about the downs. On the TV screen there will info. displaying what
+                        down and distance the offense is on. As a refresher this could be 2nd and 4. Depending on the broadcast the
+                        location of this info will change on the screen, but no matter what it will always be there, so you don’t need
+                        to keep track of anything, just look for the graphic. When the play is being ran it can be hard to tell where
+                        the first down marker is, even if you know the distance to it from the down and distance graphic. The broadcast
+                        makes this extremely easy for you by showing the yellow horizontal line, this line signifies the distance the
+                        offense needs to reach to convert the downs. This will be everything you need to easily enjoy the game of
+                        football on TV. </p>
                 </aside>
-                <div>
-                    <aside>
-                        <ul>
-                            <li><a href="https://youtu.be/qFXJOn-Y_80">Pass Play</a></li>
-                            <li><a href="https://youtu.be/uMBu4BZoWFA">Run Play</a></li>
-                            <li><a href="https://youtu.be/YAis4pzvbKM">Complicated Pass Play</a></li>
-                        </ul>
-                    </aside>
-                </div>
             </div>
-            
-            <div class="content-container">
-                <h3>Follow the football in the clip below!</h3>
+            <div class="content-container-big">
                 <figure>
-                    <iframe width="1336" height="590" src="https://www.youtube.com/embed/zrAUGjzzd4c"
-                        title="Denton Ryan High School pulls off trick play on the kick return for the touchdown, a breakdown"
+                    <h2>These are the top 100 plays of the 2022 season, you can get a feel for watching as well as clearly see the
+                        yellow line</h2>
+                    <iframe width="1336" height="590" src="https://www.youtube.com/embed/nUEwompnajU"
+                        title="Top 100 Plays of the 2022 Season!"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </figure>
             </div>
         </div>
-
+        <h1>Now if you want to talk about football with people that may know more than you here are some good conversations
+            starters.</h1><br>
         <div class="content-container">
             <div>
-                <h2>Penalties</h2>
+                <h1>Jets and Aaron Rodgers</h1>
                 <figure>
-                    <img src="../projectimages/flag.jpeg" alt="An NFL penalty flag that was thrown on the field">
+                    <img src="../projectimages/arod.jpeg" alt="a photo of aaron rodgers">
                 </figure>
             </div>
             <div>
                 <aside>
-                    <p>The NFL has an extensive rule book, but some basic penalties include false start, offsides, and
-                        offensive holding. False start (offense) and offsides (defense) involve movement before the snap,
-                        resulting in a 5-yard penalty. Offensive holding occurs when an offensive player holds a defender,
-                        moving the offense back 10 yards. Pass interference penalties, both offensive (OPI) and defensive
-                        (DPI), happen during pass plays due to excessive contact. OPI/DPI result in penalties and are
-                        signaled by the referee throwing a yellow flag.</p>
+                    <p>The New York Jets and Aaron Rodgers were the biggest story coming into this season. This is because of the
+                        Jets are, for the past few years a bad, or losing NFL team, and Aaron Rodgers, the 4-time NFL MVP and
+                        Superbowl Champion was just traded to the Jets. This created a massive shift in the team’s chances to win and
+                        team mentality. Everybody was excited to see how this team would do. BUT unfortunately, on Aaron Rodgers
+                        only got to play for a little more than a minute and for only 4 plays. This is because he suffered and
+                        injury, to be specific it was
+
+ a tear of the Achilles tendon, which is a season ending injury, and possibly
+                        career ending. This was a major letdown but anybody who watches football would love to give their thoughts
+                        and opinions on this.</p>
+                </aside>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <div>
+                <h1>Baker Mayfield and the Buccaneers</h1>
+                <figure>
+                    <img src="../projectimages/baker.jpeg" alt="a photo of baker mayfield">
+                </figure>
+            </div>
+            <div>
+                <aside>
+                    <p>Following Tom Brady’s retirement from the Buccs (Buccaneers) (Tom Brady is the most successful NFL player
+                        ever) The Tampa Bay buccaneers are missing the most important position in the NFL the QB. This means they
+                        had to trade or draft for somebody; they ended up trading for QB Baker Mayfield. Baker is a polarizing NFL
+                        player from his attitude to his fluctuating play on the field. This year, as of writing this (Week 2 of
+                        2023 season) Baker has proved himself to be a starting QB, he has won both of his first two games and
+                        played very well. This is a good conversation because depending on who you ask, they will give very different
+                        perspectives and opinions on Baker and his situation.</p>
+                </aside>
+            </div>
+        </div>
+        <div class="content-container">
+            <div>
+                <h1>Colorado Buffalos, and Deion Sanders</h1>
+                <figure>
+                    <img src="../projectimages/colorado.jpeg" alt="a photo of colorado's football team">
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="../projectimages/sanders.jpeg" alt="a photo of dieon sanders">
+                </figure>
+            </div>
+            <div>
+                <aside>
+                    <p>The Colorado Buffalos is a college football team, but the story they are creating is relevant and
+                        interesting to any football fan. Colorado has not been a historically good football team, but they started
+                        to revolutionize the team. This is because of the hiring of a new coach, Deion Sanders, (or for fun as the
+                        teams calls him, Coach Prime, this comes from his NFL nickname ‘Primetime”) Deion is a Hall of Fame NFL
+                        Cornerback, and arguably the best of all time. Outside of his play, his personality is and was unmatched,
+                        he is a spectacle for anybody to hear and watch. When Colorado hired him, he continued to do something no
+                        coach has ever done, in the NFL or college, he kicked off 99% of to current team, and continued to hand
+                        select an entire new team, with a focus on athleticism and attitude similar towards his. Two of these
+                        players included two of his sons, Shilo and Shedeur Sanders. One being a Safety and one being the QB. This
+                        team not only did something no other team has ever done before, but as of writing this (Week 3 of the 2023
+                        college season) they are undefeated and proving to everybody that they are a real team and not something
+                        to mess with. This is something that Colorado Football has never seen before, and even more than that
+                        something nobody has ever seen, it is truly revolutionary. </p>
+                </aside>
+            </div>
+        </div>
+        <div class="content-container">
+            <div>
+                <h1>Superbowl</h1>
+                <aside>
+                    <p>Asking who you think will win the Superbowl or has a chance you can ask anybody. Everybody has different
+                        opinions on who’s the best and has a chance to go all the way. It’s too early in the season to have a
+                        truly ‘safe’ pick, but that also creates more polarizing and controversial opinions, so have fun with it.</p>
+                </aside>
+                <figure>
+                    <img class="sbt" src="../projectimages/superbowl.jpeg" alt="a photo of a player holding up superbowl trophy">
+                </figure>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div class="content-container">
+            <div>
+                <h1>What team should you follow?</h1>
+                <figure>
+                    <img src="../projectimages/teams.jpeg" alt="Every NFL teams helmet design">
+                </figure>
+            </div>
+            <div>
+                <aside>
+                    <p>In the NFL most people root for the team in which they grew up. For example, if somebody grew up in San
+                        Francisco, usually they would be a San Francisco 49’s fan. If you’re from New York, you will have two
+                        choices because there are 2 New York teams in the NFL. If you are not a fan of the team you are from, or
+                        you didn’t grow up with a clear NFL team to follow, have fun. Choose whoever you want to root for, and you
+                        can be as casual or serious as you want. Sticking with that team for the rest of your life or change your
+                        team every week. It is also popular to follow whatever team has the most news surrounding it, being this
+                        type of fan is known as a ‘bandwagon’. Generally, that’s not a good term, but you can support whoever you
+                        want in the end, and you can take this as a compliment if you're truly wanted.</p>
+                </aside>
+            </div>
+            <div class="content-container">
+                <h2> Here is a list of all 32 teams</h2>
+                <aside>
+                    <ol>
+                        <li>Arizona Cardinals</li>
+                        <li>Atlanta Falcons</li>
+                        <li>Baltimore Ravens</li>
+                        <li>Buffalo Bills</li>
+                        <li>Carolina Panthers</li>
+                        <li>Chicago Bears</li>
+                        <li>Cincinnati Bengals</li>
+                        <li>Cleveland Browns</li>
+                        <li>Dallas Cowboys</li>
+                        <li>Denver Broncos</li>
+                        <li>Detroit Lions</li>
+                        <li>Green Bay Packers</li>
+                        <li>Houston Texans</li>
+                        <li>Indianapolis Colts</li>
+                        <li>Jacksonville Jaguars</li>
+                        <li>Kansas City Chiefs</li>
+                        <li>Las Vegas Raiders</li>
+                        <li>Los Angeles Chargers</li>
+                        <li>Los Angeles Rams</li>
+                        <li>Miami Dolphins</li>
+                        <li>Minnesota Vikings</li>
+                        <li>New England Patriots</li>
+                        <li>New Orleans Saints</li>
+                        <li>New York Giants</li>
+                        <li>New York Jets</li>
+                        <li>Philadelphia Eagles</li>
+                        <li>Pittsburgh Steelers</li>
+                        <li>San Francisco 49ers</li>
+                        <li>Seattle Seahawks</li>
+                        <li>Tampa Bay Buccaneers</li>
+                        <li>Tennessee Titans</li>
+                        <li>Washington Commanders</li>
+                    </ol>
                 </aside>
             </div>
         </div>
     </main>
-
     <footer>
         <nav class="nav">
             <div class="pagelinks">
