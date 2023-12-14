@@ -121,6 +121,11 @@
         .logopng {
             width: 20px;
         }
+
+        .skip {background-color:#addc14; padding: 5px; border: 1px solid #000000; text-decoration: none; top: 10px; 
+        position: absolute; 
+        left: -999px; }
+        .skip:focus {left: 10px; }
     </style>
 </head>
 
@@ -128,6 +133,7 @@
     <header>
         <nav class="nav">
             <div class="pagelinks">
+                <a href="#main" class="skip" tabindex="1">Skip to Content</a>
                 <a href="home.html"> Football <span>|</span></a>
                 <a href="nflrules.html"> Rules <span>|</span></a>
                 <a href="watch.html"> How to Watch/News</a>
@@ -143,7 +149,7 @@
     <main>
         <div>
             <div>
-                <h1>How to watch the NFL</h1>
+                <h1 id="main">How to watch the NFL</h1>
                 <aside class="content-container">
                     <p>With all your new NFL knowledge you should have a basic grasp on the NFL. Now what do you look for on TV?
                         Don’t worry this is the easy part now. The score of each team will be displayed on the bottom of the screen
