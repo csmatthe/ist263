@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rules</title>
     <style>
+        .img1 {width:300px;}
+        .img2 {width:300px;}
+        .img3 {width:300px;}
+        .img4 {width:300px;}
+        .img5 {width:600px;}
+        .img6 {width:700px;}
+        .img7 {width:300px;}
+        
         body {
             background-color: #a9a9a9;
             color: #333;
@@ -73,10 +81,10 @@
 
         .content-container figure {
             float: right;
+            text-align: center; /* Center images within the figure */
         }
 
         .content-container figure img {
-            max-width: 100%;
             height: auto;
             border: 2px solid #333;
             box-sizing: border-box;
@@ -109,7 +117,7 @@
             border: 2px solid #333;
             border-radius: 10px;
             margin-bottom: 20px;
-            width: 48%;
+            max-width: 70%;
             box-sizing: border-box;
         }
 
@@ -122,17 +130,10 @@
             padding-left: 20px;
         }
 
-        .img-right figure {
-            float: right;
-        }
-
-        .img-left figure {
-            float: left;
-        }
-
         @media only screen and (max-width: 600px) {
             .container {
                 flex-direction: column;
+                margin: 10px;
             }
 
             .pageTitle,
@@ -141,6 +142,7 @@
                 width: 100%;
             }
         }
+        .logopng {width:20px}
     </style>
 </head>
 
@@ -154,7 +156,7 @@
             </div>
             <div class="navlogo">
                 <div>
-                    <a>LOGO</a>
+                    <img class="logopng" src="../projectimages/logopng.png">
                 </div>
             </div>
         </nav>
@@ -207,7 +209,7 @@
 
         <div class="content-container img-right">
             <figure>
-                <img class="img3" src="../projectimages/field.svg" alt="standard football field">
+                <img class="img3" src="../projectimages/field.svg" alt="standard football field" >
             </figure>
             <div>
                 <aside>
@@ -218,7 +220,9 @@
                         In the back of each endzone, there is a “goalpost”. These are a yellow, Y-shaped structure; the
                         gap in between the ‘Y’ shape is 18.5 feet, and the height of it ends at 35 feet. But you need to
                         think of it as going all the way up to the sky. On the main playing field, there are many
-                        horizontal lines. Each of these full horizontal lines marks each 5 yards and, on the side, you
+                        horizontal
+
+ lines. Each of these full horizontal lines marks each 5 yards and, on the side, you
                         can see the distance. For example, if it says ‘20’, you are on the 20-yard line. Once you get to
                         50 yards, it starts to go back down to zero. It goes up to 50 and back down, not 0-100. It is a
                         symmetrical field. In the middle of the field, the 50-yard line, you can see the home team’s logo.
@@ -241,13 +245,13 @@
                 </aside>
             </div>
             <figure>
-                <img class="img4" src="../projectimages/teams.jpeg" alt="nfl teams">
+                <img class="img4" src="../projectimages/teams.jpeg" alt="nfl teams" >
             </figure>
         </div>
 
         <div class="content-container img-right">
             <figure>
-                <img class="img5" src="../projectimages/offense.svg" alt="standard football offense lineup">
+                <img class="img5" src="../projectimages/offense.svg" alt="standard football offense lineup" >
             </figure>
             <div>
                 <aside>
@@ -311,7 +315,7 @@
 
         <div class="content-container img-right">
             <figure>
-                <img class="img7" src="../projectimages/kicking.jpeg" alt="image of somebody kicking a football">
+                <img class="img7" src="../projectimages/kicking.jpeg" alt="image of somebody kicking a football" >
             </figure>
             <div>
                 <aside>
@@ -333,7 +337,7 @@
             </div>
             <div class="navlogo">
                 <div>
-                    <a>LOGO</a>
+                    <img class="logopng" src="../projectimages/logopng.png">
                 </div>
             </div>
         </nav>
